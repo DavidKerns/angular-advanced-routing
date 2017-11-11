@@ -7,6 +7,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ContactComponent } from './contact/contact.component';
 import { ContactOverviewComponent } from './contact-overview/contact-overview.component';
 import { ContactEditComponent } from './contact-edit/contact-edit.component';
+import { FormsModule } from '@angular/forms';
 
 const routes: Routes = [
 { path: '', component: ContactListComponent },
@@ -28,6 +29,7 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     RouterModule.forRoot(routes)
   ],
   providers: [ContactService],
