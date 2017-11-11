@@ -1,11 +1,10 @@
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
-import { ContactService } from '../contact.service';
+import { ContactService } from '../contact-service.service';
 @Component({
   selector: 'app-contact-list',
   templateUrl: './contact-list.component.html',
   styleUrls: ['./contact-list.component.css'],
-
 })
 
 export class ContactListComponent implements OnInit {
